@@ -276,165 +276,123 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:22px 0;
 <section class="sec sec-alt" id="proyectos">
   <div class="inner">
     <p class="sec-eye">Portafolio</p>
-    <h2 class="sec-h">Dashboards de <em>demostración</em></h2>
-    <p class="sec-sub">Visualizaciones construidas con datos sintéticos representativos de proyectos reales.</p>
-    <div class="slide-wrap">
-      <div class="slide-cont" id="sl">
-        <div class="slide-trk" id="sltrk">
+      <h2 class="sec-h">Dashboards de <em>demostración</em></h2>
+      <p class="sec-sub">3 dashboards interactivos con datos reales — filtros dinámicos, KPIs comparativos 2023 vs 2024 e insights automáticos.</p>
 
-          <div class="slide">
-            <div class="dash">
-              <div class="dash-hdr">
-                <div><div class="dash-ttl">Dashboard Comercial — KPIs de Ventas</div><div class="dash-sub">Enero — Diciembre 2024 · Cierre anual</div></div>
-                <div class="dash-bdg">Power BI · SQL</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px;">
+
+        <!-- CARD 1 -->
+        <div style="background:var(--surf);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(0,112,192,0.4)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="background:var(--dark);padding:20px 20px 0;border-bottom:1px solid var(--border);">
+            <div style="background:var(--surf);border:1px solid var(--border);border-radius:6px 6px 0 0;padding:12px 14px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+                <span style="font-size:10px;font-weight:600;color:var(--lblue);letter-spacing:1px;text-transform:uppercase;">Dashboard Comercial</span>
+                <span style="font-size:9px;padding:2px 7px;border-radius:3px;background:rgba(0,112,192,0.15);color:var(--lblue);border:1px solid rgba(0,112,192,0.25);">Power BI · SQL</span>
               </div>
-              <div class="kpis">
-                <div class="kpi"><span class="kpi-n">Q4.2M</span><span class="kpi-l">Ventas totales</span><span class="kpi-d du">▲ 12.4% vs año anterior</span></div>
-                <div class="kpi"><span class="kpi-n">1,847</span><span class="kpi-l">Transacciones</span><span class="kpi-d du">▲ 8.1% vs año anterior</span></div>
-                <div class="kpi"><span class="kpi-n">Q2,274</span><span class="kpi-l">Ticket promedio</span><span class="kpi-d du">▲ 3.9% vs año anterior</span></div>
-                <div class="kpi"><span class="kpi-n">87.3%</span><span class="kpi-l">Meta cumplida</span><span class="kpi-d dd">▼ 2.1% vs objetivo</span></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+                <div style="background:var(--s2);border-radius:4px;padding:8px 10px;">
+                  <div style="font-size:9px;color:var(--tlow);margin-bottom:3px;">Ventas 2024</div>
+                  <div style="font-size:14px;font-weight:300;color:var(--white);">Q8.1M</div>
+                  <div style="font-size:9px;color:var(--green);">▲ 23.6%</div>
+                </div>
+                <div style="background:var(--s2);border-radius:4px;padding:8px 10px;">
+                  <div style="font-size:9px;color:var(--tlow);margin-bottom:3px;">Cumpl. meta</div>
+                  <div style="font-size:14px;font-weight:300;color:var(--white);">107.5%</div>
+                  <div style="font-size:9px;color:var(--green);">▲ Sobre meta</div>
+                </div>
               </div>
-              <div class="charts">
-                <div class="cbox">
-                  <div class="clbl">Ventas mensuales 2024</div>
-                  <div class="bars">
-                    <div class="bar" style="height:55%"><span class="blbl">Ene</span></div>
-                    <div class="bar" style="height:62%"><span class="blbl">Feb</span></div>
-                    <div class="bar" style="height:48%"><span class="blbl">Mar</span></div>
-                    <div class="bar" style="height:71%"><span class="blbl">Abr</span></div>
-                    <div class="bar" style="height:80%"><span class="blbl">May</span></div>
-                    <div class="bar" style="height:65%"><span class="blbl">Jun</span></div>
-                    <div class="bar" style="height:90%"><span class="blbl">Jul</span></div>
-                    <div class="bar" style="height:78%"><span class="blbl">Ago</span></div>
-                    <div class="bar" style="height:85%"><span class="blbl">Sep</span></div>
-                    <div class="bar" style="height:100%"><span class="blbl">Oct</span></div>
-                    <div class="bar" style="height:92%"><span class="blbl">Nov</span></div>
-                    <div class="bar" style="height:88%"><span class="blbl">Dic</span></div>
-                  </div>
-                </div>
-                <div class="cbox">
-                  <div class="clbl">Ventas por categoría</div>
-                  <div class="donut-w">
-                    <svg width="76" height="76" viewBox="0 0 76 76">
-                      <circle cx="38" cy="38" r="28" fill="none" stroke="#162844" stroke-width="13"/>
-                      <circle cx="38" cy="38" r="28" fill="none" stroke="#0070C0" stroke-width="13" stroke-dasharray="66 110" stroke-dashoffset="-9" transform="rotate(-90 38 38)"/>
-                      <circle cx="38" cy="38" r="28" fill="none" stroke="#4A7FA5" stroke-width="13" stroke-dasharray="37 139" stroke-dashoffset="-75" transform="rotate(-90 38 38)"/>
-                      <circle cx="38" cy="38" r="28" fill="none" stroke="#90CDF4" stroke-width="13" stroke-dasharray="20 156" stroke-dashoffset="-112" transform="rotate(-90 38 38)"/>
-                    </svg>
-                    <div class="leg">
-                      <div class="li"><div class="ld" style="background:#0070C0"></div>Producto A — 37%</div>
-                      <div class="li"><div class="ld" style="background:#4A7FA5"></div>Producto B — 21%</div>
-                      <div class="li"><div class="ld" style="background:#90CDF4"></div>Producto C — 11%</div>
-                      <div class="li"><div class="ld" style="background:#162844"></div>Otros — 31%</div>
-                    </div>
-                  </div>
-                </div>
+              <div style="height:3px;background:var(--s2);border-radius:2px;margin-top:10px;overflow:hidden;">
+                <div style="height:100%;width:70%;background:linear-gradient(90deg,#0070C0,#90CDF4);border-radius:2px;"></div>
               </div>
             </div>
           </div>
-
-          <div class="slide">
-            <div class="dash">
-              <div class="dash-hdr">
-                <div><div class="dash-ttl">Dashboard Financiero — Gasto vs. Presupuesto</div><div class="dash-sub">Contraloría · Seguimiento mensual · 2024</div></div>
-                <div class="dash-bdg">Power BI · SAP · DAX</div>
-              </div>
-              <div class="kpis">
-                <div class="kpi"><span class="kpi-n">Q8.4M</span><span class="kpi-l">Presupuesto anual</span><span class="kpi-d" style="color:var(--tlow)">— Plan aprobado</span></div>
-                <div class="kpi"><span class="kpi-n">Q7.1M</span><span class="kpi-l">Gasto ejecutado</span><span class="kpi-d du">▲ 84.5% ejecución</span></div>
-                <div class="kpi"><span class="kpi-n">Q1.3M</span><span class="kpi-l">Saldo disponible</span><span class="kpi-d" style="color:var(--tlow)">15.5% del presupuesto</span></div>
-                <div class="kpi"><span class="kpi-n">3</span><span class="kpi-l">Áreas con desviación</span><span class="kpi-d dd">▼ Requieren revisión</span></div>
-              </div>
-              <div class="charts">
-                <div class="cbox">
-                  <div class="clbl">Gasto acumulado vs presupuesto</div>
-                  <div class="bars">
-                    <div class="bar" style="height:72%;background:linear-gradient(180deg,#4A7FA5,rgba(74,127,165,0.25))"><span class="blbl">Ene</span></div>
-                    <div class="bar" style="height:68%"><span class="blbl">Feb</span></div>
-                    <div class="bar" style="height:81%"><span class="blbl">Mar</span></div>
-                    <div class="bar" style="height:77%;background:linear-gradient(180deg,#4A7FA5,rgba(74,127,165,0.25))"><span class="blbl">Abr</span></div>
-                    <div class="bar" style="height:90%"><span class="blbl">May</span></div>
-                    <div class="bar" style="height:85%"><span class="blbl">Jun</span></div>
-                    <div class="bar" style="height:100%;background:linear-gradient(180deg,#F87171,rgba(248,113,113,0.25))"><span class="blbl">Jul</span></div>
-                    <div class="bar" style="height:88%;background:linear-gradient(180deg,#F87171,rgba(248,113,113,0.25))"><span class="blbl">Ago</span></div>
-                    <div class="bar" style="height:79%"><span class="blbl">Sep</span></div>
-                    <div class="bar" style="height:83%"><span class="blbl">Oct</span></div>
-                    <div class="bar" style="height:91%"><span class="blbl">Nov</span></div>
-                    <div class="bar" style="height:87%"><span class="blbl">Dic</span></div>
-                  </div>
-                </div>
-                <div class="cbox">
-                  <div class="clbl">Ejecución por área</div>
-                  <div class="prog-list">
-                    <div class="prog-row"><div class="prog-lbl"><span>Operaciones</span><span style="color:var(--green)">92%</span></div><div class="prog-bar"><div class="prog-fill" style="width:92%;background:var(--green)"></div></div></div>
-                    <div class="prog-row"><div class="prog-lbl"><span>Comercial</span><span style="color:var(--blue)">78%</span></div><div class="prog-bar"><div class="prog-fill" style="width:78%;background:var(--blue)"></div></div></div>
-                    <div class="prog-row"><div class="prog-lbl"><span>Marketing</span><span style="color:var(--red)">108%</span></div><div class="prog-bar"><div class="prog-fill" style="width:100%;background:var(--red)"></div></div></div>
-                    <div class="prog-row"><div class="prog-lbl"><span>RRHH</span><span style="color:var(--green)">81%</span></div><div class="prog-bar"><div class="prog-fill" style="width:81%;background:var(--green)"></div></div></div>
-                    <div class="prog-row"><div class="prog-lbl"><span>TI</span><span style="color:var(--red)">112%</span></div><div class="prog-bar"><div class="prog-fill" style="width:100%;background:var(--red)"></div></div></div>
-                  </div>
-                </div>
-              </div>
+          <div style="padding:16px 20px;">
+            <p style="font-size:11px;color:var(--tlow);line-height:1.6;margin-bottom:12px;">KPIs de ventas · Tendencia mensual · Top 10 productos · Desempeño por región · Mix por canal</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;">
+              <span style="font-size:9px;color:var(--lblue);background:rgba(0,112,192,0.08);border:1px solid rgba(0,112,192,0.18);padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.8px;">Filtros interactivos</span>
+              <span style="font-size:9px;color:var(--lblue);background:rgba(0,112,192,0.08);border:1px solid rgba(0,112,192,0.18);padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.8px;">Insights automáticos</span>
             </div>
+            <a href="dashboards.html#comercial" target="_blank" class="btn-s" style="display:block;text-align:center;font-size:10px;padding:10px;">Ver dashboard →</a>
           </div>
-
-          <div class="slide">
-            <div class="dash">
-              <div class="dash-hdr">
-                <div><div class="dash-ttl">Dashboard de Planeación de la Demanda</div><div class="dash-sub">Inventario · Proyecciones · Rotación · 2024</div></div>
-                <div class="dash-bdg">Python · SQL · Power BI</div>
-              </div>
-              <div class="kpis">
-                <div class="kpi"><span class="kpi-n">94.2%</span><span class="kpi-l">Precisión forecast</span><span class="kpi-d du">▲ 6.3% vs modelo anterior</span></div>
-                <div class="kpi"><span class="kpi-n">18 días</span><span class="kpi-l">Días de inventario</span><span class="kpi-d du">▼ Optimizado 4 días</span></div>
-                <div class="kpi"><span class="kpi-n">3.2%</span><span class="kpi-l">Quiebre de stock</span><span class="kpi-d du">▼ Reducido 1.8 pp</span></div>
-                <div class="kpi"><span class="kpi-n">248</span><span class="kpi-l">SKUs analizados</span><span class="kpi-d" style="color:var(--tlow)">— Cobertura total</span></div>
-              </div>
-              <div class="charts">
-                <div class="cbox">
-                  <div class="clbl">Demanda real vs. proyectada</div>
-                  <div class="bars">
-                    <div class="bar" style="height:60%;opacity:0.5"><span class="blbl">Ene</span></div>
-                    <div class="bar" style="height:58%"><span class="blbl">Feb</span></div>
-                    <div class="bar" style="height:72%;opacity:0.5"><span class="blbl">Mar</span></div>
-                    <div class="bar" style="height:68%"><span class="blbl">Abr</span></div>
-                    <div class="bar" style="height:85%;opacity:0.5"><span class="blbl">May</span></div>
-                    <div class="bar" style="height:88%"><span class="blbl">Jun</span></div>
-                    <div class="bar" style="height:76%;opacity:0.5"><span class="blbl">Jul</span></div>
-                    <div class="bar" style="height:79%"><span class="blbl">Ago</span></div>
-                    <div class="bar" style="height:92%;opacity:0.5"><span class="blbl">Sep</span></div>
-                    <div class="bar" style="height:95%"><span class="blbl">Oct</span></div>
-                    <div class="bar" style="height:100%;opacity:0.5"><span class="blbl">Nov</span></div>
-                    <div class="bar" style="height:97%"><span class="blbl">Dic</span></div>
-                  </div>
-                </div>
-                <div class="cbox">
-                  <div class="clbl">Top SKUs por rotación</div>
-                  <div class="prog-list">
-                    <div class="prog-row"><div class="prog-lbl"><span>SKU-0041</span><span style="color:var(--lblue)">Alta</span></div><div class="prog-bar"><div class="prog-fill" style="width:96%;background:var(--lblue)"></div></div></div>
-                    <div class="prog-row"><div class="prog-lbl"><span>SKU-0017</span><span style="color:var(--lblue)">Alta</span></div><div class="prog-bar"><div class="prog-fill" style="width:88%;background:var(--lblue)"></div></div></div>
-                    <div class="prog-row"><div class="prog-lbl"><span>SKU-0092</span><span style="color:var(--blue)">Media</span></div><div class="prog-bar"><div class="prog-fill" style="width:65%;background:var(--blue)"></div></div></div>
-                    <div class="prog-row"><div class="prog-lbl"><span>SKU-0055</span><span style="color:var(--blue)">Media</span></div><div class="prog-bar"><div class="prog-fill" style="width:52%;background:var(--blue)"></div></div></div>
-                    <div class="prog-row"><div class="prog-lbl"><span>SKU-0108</span><span style="color:var(--mblue)">Baja</span></div><div class="prog-bar"><div class="prog-fill" style="width:28%;background:var(--mblue)"></div></div></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+        <!-- CARD 2 -->
+        <div style="background:var(--surf);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(0,112,192,0.4)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="background:var(--dark);padding:20px 20px 0;border-bottom:1px solid var(--border);">
+            <div style="background:var(--surf);border:1px solid var(--border);border-radius:6px 6px 0 0;padding:12px 14px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+                <span style="font-size:10px;font-weight:600;color:var(--lblue);letter-spacing:1px;text-transform:uppercase;">Dashboard Financiero</span>
+                <span style="font-size:9px;padding:2px 7px;border-radius:3px;background:rgba(0,112,192,0.15);color:var(--lblue);border:1px solid rgba(0,112,192,0.25);">Power BI · SAP · DAX</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+                <div style="background:var(--s2);border-radius:4px;padding:8px 10px;">
+                  <div style="font-size:9px;color:var(--tlow);margin-bottom:3px;">Margen bruto</div>
+                  <div style="font-size:14px;font-weight:300;color:var(--white);">35.0%</div>
+                  <div style="font-size:9px;color:var(--green);">▲ +0.7 pp</div>
+                </div>
+                <div style="background:var(--s2);border-radius:4px;padding:8px 10px;">
+                  <div style="font-size:9px;color:var(--tlow);margin-bottom:3px;">Utilidad 2024</div>
+                  <div style="font-size:14px;font-weight:300;color:var(--white);">Q2.85M</div>
+                  <div style="font-size:9px;color:var(--green);">▲ 25.8%</div>
+                </div>
+              </div>
+              <div style="height:3px;background:var(--s2);border-radius:2px;margin-top:10px;overflow:hidden;">
+                <div style="height:100%;width:85%;background:linear-gradient(90deg,#4ADE80,#90CDF4);border-radius:2px;"></div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:16px 20px;">
+            <p style="font-size:11px;color:var(--tlow);line-height:1.6;margin-bottom:12px;">P&L mensual · Evolución de márgenes · Waterfall por categoría · Gauge presupuestal</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;">
+              <span style="font-size:9px;color:var(--lblue);background:rgba(0,112,192,0.08);border:1px solid rgba(0,112,192,0.18);padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.8px;">Análisis de variación</span>
+              <span style="font-size:9px;color:var(--lblue);background:rgba(0,112,192,0.08);border:1px solid rgba(0,112,192,0.18);padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.8px;">2023 vs 2024</span>
+            </div>
+            <a href="dashboards.html#financiero" target="_blank" class="btn-s" style="display:block;text-align:center;font-size:10px;padding:10px;">Ver dashboard →</a>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div style="background:var(--surf);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(0,112,192,0.4)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="background:var(--dark);padding:20px 20px 0;border-bottom:1px solid var(--border);">
+            <div style="background:var(--surf);border:1px solid var(--border);border-radius:6px 6px 0 0;padding:12px 14px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+                <span style="font-size:10px;font-weight:600;color:var(--lblue);letter-spacing:1px;text-transform:uppercase;">Planeación de Demanda</span>
+                <span style="font-size:9px;padding:2px 7px;border-radius:3px;background:rgba(0,112,192,0.15);color:var(--lblue);border:1px solid rgba(0,112,192,0.25);">Python · SQL</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+                <div style="background:var(--s2);border-radius:4px;padding:8px 10px;">
+                  <div style="font-size:9px;color:var(--tlow);margin-bottom:3px;">Unidades 2024</div>
+                  <div style="font-size:14px;font-weight:300;color:var(--white);">2,040</div>
+                  <div style="font-size:9px;color:var(--green);">▲ 17.1%</div>
+                </div>
+                <div style="background:var(--s2);border-radius:4px;padding:8px 10px;">
+                  <div style="font-size:9px;color:var(--tlow);margin-bottom:3px;">Índice estac.</div>
+                  <div style="font-size:14px;font-weight:300;color:var(--white);">2.14x</div>
+                  <div style="font-size:9px;color:var(--yellow);">~ Pico/Valle</div>
+                </div>
+              </div>
+              <div style="height:3px;background:var(--s2);border-radius:2px;margin-top:10px;overflow:hidden;">
+                <div style="height:100%;width:55%;background:linear-gradient(90deg,#FAC701,#90CDF4);border-radius:2px;"></div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:16px 20px;">
+            <p style="font-size:11px;color:var(--tlow);line-height:1.6;margin-bottom:12px;">Tendencia de volumen · Índice de estacionalidad · Mix por categoría · Precio promedio</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;">
+              <span style="font-size:9px;color:var(--lblue);background:rgba(0,112,192,0.08);border:1px solid rgba(0,112,192,0.18);padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.8px;">Forecast</span>
+              <span style="font-size:9px;color:var(--lblue);background:rgba(0,112,192,0.08);border:1px solid rgba(0,112,192,0.18);padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.8px;">Estacionalidad</span>
+            </div>
+            <a href="dashboards.html#demanda" target="_blank" class="btn-s" style="display:block;text-align:center;font-size:10px;padding:10px;">Ver dashboard →</a>
+          </div>
+        </div>
+
       </div>
-      <button class="slbtn slbtn-p" onclick="mv(-1)">&#8249;</button>
-      <button class="slbtn slbtn-n" onclick="mv(1)">&#8250;</button>
-    </div>
-    <div class="sl-dots" id="sldots">
-      <span class="sldot on" onclick="go(0)"></span>
-      <span class="sldot" onclick="go(1)"></span>
-      <span class="sldot" onclick="go(2)"></span>
-    </div>
-    <div class="sl-info" style="margin-top:10px;">
-      <span class="sl-ct" id="slct">1 / 3</span>
-      <span class="sl-nm" id="slnm">Dashboard Comercial — KPIs de Ventas</span>
-    </div>
+
+      <div style="text-align:center;">
+        <a href="dashboards.html" target="_blank" class="btn-o" style="font-size:11px;padding:12px 32px;">
+          Ver todos los dashboards interactivos →
+        </a>
+      </div>
   </div>
 </section>
 
@@ -496,6 +454,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:22px 0;
 </footer>
 
 <script>
+
 const names=["Dashboard Comercial — KPIs de Ventas","Dashboard Financiero — Gasto vs. Presupuesto","Dashboard de Planeación de la Demanda"];
 let cur=0,tot=3;
 function mv(d){cur=(cur+d+tot)%tot;upd();}
@@ -505,6 +464,16 @@ function upd(){
   document.getElementById("slct").textContent=`${cur+1} / ${tot}`;
   document.getElementById("slnm").textContent=names[cur];
   [...document.getElementById("sldots").children].forEach((d,i)=>d.className="sldot"+(i===cur?" on":""));
+}
+
+const hash = window.location.hash.replace('#','');
+if(hash && document.getElementById('tab-'+hash)){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  document.getElementById('tab-'+hash).classList.add('on');
+  document.querySelector(`.tab[onclick*="${hash}"]`).classList.add('on');
+  if(hash==='financiero') renderFin();
+  if(hash==='demanda') renderDem();
 }
 </script>
 </body>
